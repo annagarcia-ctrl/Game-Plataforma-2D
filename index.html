@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Corrida ao Trabalho — jogo 2D de plataforma. Dev Web II · UniLaSalle." />
+  <meta name="author" content="Dev Web II — UniLaSalle" />
+  <title>Corrida ao Trabalho</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!--
+    Tela de carregamento em HTML/CSS.
+    O JS atualiza #loading-bar-inner e #loading-text enquanto as sprites carregam,
+    e adiciona a classe "hidden" quando tudo estiver pronto.
+  -->
+  <div id="loading-screen" role="status" aria-label="Carregando jogo">
+    <h1>Corrida ao Trabalho</h1>
+    <div id="loading-bar-outer" aria-hidden="true">
+      <div id="loading-bar-inner"></div>
+    </div>
+    <p id="loading-text">Carregando... 0/5</p>
+  </div>
+
+  <!-- Canvas principal do jogo (1280×640 internamente, escalado por JS) -->
+  <canvas id="game-canvas" aria-label="Corrida ao Trabalho — área do jogo"></canvas>
+
+  <script src="game.js"></script>
+</body>
+</html>
